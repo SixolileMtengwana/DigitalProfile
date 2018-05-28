@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+ * Sixolile.Mtengwana™
+ * License(s): MIT
+ * Digital Profile: https://www.mtengwanas.firebaseapp.com
+ * GeniusPlatform: https://genius.platform.com
+*/
+
+/* Sans Open Font Import */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Sixolile Mtengwana Fonts */
+@import url('https://file.myfontastic.com/wNNnzFXKvofs3MmrVdbfgA/icons.css');
+
+/* Applies Font to all Tags/Elements */
+*{ /* Default Global Settings _look&feel_ */
+    font-size: 12px; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /* Theme */
+    color: #0d1615;
+}
+.digital, body, div{
+    margin: none;
+}
+.digital-body{
+    background-color: #fbfbfb;
+    padding: 3px;
+    /* padding-bottom: 20px; */
+    max-height: 90vh;
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: auto; 
+}
+/* Custom Classes */
+.icon{
+    font-size: 25px !important;
+}
+.digital-animation-smooth{
+        /* Animated Change Delay */
+        -webkit-transition-delay: 3s; /* Safari */
+        transition-delay: 3s;
+}
+/* Scrollbar Customization */
+.font-size-11px{
+    font-size: 11px !important ;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    display: none;
+    background: #1e1e1e26;
+}

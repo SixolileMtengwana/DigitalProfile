@@ -1,0 +1,20 @@
+.digital-navbar{
+    /*  #c9c8c8 */   
+    /* box-shadow:0 .5px 0 0 #c9c8c8; */
+    width: 100%;
+}
+.item-2{
+    float: left;
+    width: 50%;
+    height:100%;
+    background-color: #FFFFFF;
+}
+.author{
+    font-family: monospace,sans-serif;
+    font-size: 20px;
+    padding: 3px;
+}
+.btn:hover{
+    color: #504f4f;
+    cursor: pointer;
+}
