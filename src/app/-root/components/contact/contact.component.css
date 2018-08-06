@@ -1,0 +1,10 @@
+.col-sm-12{
+    padding: 15px;
+}
+label, input{
+    font-size: 18px !important;
+}
+.btn{
+ background: #5281B8;
+ font-size: 18px;
+}

@@ -1,8 +1,43 @@
-<div class="digital-navbar">
-  <div class="item-2 text-truncate text-left">
-    <div class="btn"> Sixolile Mtengwana </div>
+<div class="header">
+  <div class="digital-navbar" (scroll)="adjust($event)" [class.activeNavbar]="isNavbarActive">
+    <img [src]="imgSrc" alt="" class="user-logo" routerLink="">
+    <div class="username">
+      <span class="name" routerLink="">Sixolile Mtengwana</span>
+      <i class="fa fa-navicon"></i>
+    </div>
+    <a routerLink="bio">Bio</a>
+    <a routerLink="blog">Blog</a>
+    <a routerLink="projects">Projects</a>
+    <a target="1" href="https://www.linkedin.com/in/sixolile-mtengwana">LinkedIn</a>
+    <a target="1" href="https://geniusplatform.000webhostapp.com/">Genius Platform</a>
+    <!-- <div class="socials">
+  <a href="#facebook"class="fa fa-facebook-square"></a>
+  <a href="#twitter"class="fa fa-twitter"></a>
+  <a href="#devrant" class="fa fa-chat"></a>
+  </div> -->
   </div>
-  <div class="item-2 text-truncate text-right">
-    <i class="fa digital-animation-smooth icon fa-navicon btn"></i>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 text-center displayImg">
+        <img src="./assets/img/devRantAvatarRight.png" alt="">
+      </div>
+      <div class="col-sm-6 d-flex">
+        <div class="contain text-right">
+          <h1>
+            Sixolile Mtengwana
+          </h1>
+          <h2>Inquisitive • Analytical • Progressive</h2>
+          <h3>
+            < / developer>
+          </h3>
+          <p> // a developer who is opening doors for himself from the get go. I am currently using Angular as my front-end development
+            framework and comfortable with using other frameworks such as ReactJS and Vanilla JS. I am at the medial stage
+            of mastering the MEAN Stack and am looking forward to the next stages of being a fullstack developer after mastering
+            the MERN Stack as well.
+          </p>
+          <a target="1"href="https://github.com/mapitsiliciousness" class="fa fa-github font-size-large"></a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,0 +1,97 @@
+*{
+    color: #1e1e1e;
+}
+.container{
+    padding-top:25px;
+    background: #ffffff;
+}
+/* 
+      <div class="skill-container">
+        <div class="skill-img">
+*/
+/*  Skills tablets */
+
+.skill-container{
+    width: 100%;
+    max-width: 555px;
+    padding: 10px;
+    color: #1e1e1e;  
+    font-size: 25px;
+    float: left;
+}
+
+.skill-img{
+    width: 15%;
+    height: inherit !important;
+    float: left;
+}
+.skill-img > img{
+    margin-top: 20px !important;
+    object-fit: contain;
+    object-position: center;    
+    width: 100%;
+    margin: auto;
+}
+.skill-description{
+    float: left;
+    max-width: 85%;
+    overflow: hidden;
+    padding-left: 15px;
+}
+.skill-description > p{
+    font-size: 20px;
+    text-align: left;
+}
+.content{
+ height: fit-content;
+}
+/*  Progress Bar */
+/* 
+                <div class="progress-bar" style="width: 68%; background: #DD0031 ">
+                  <span class="bar-width">68%</span>
+                   */
+.progress{
+    height: 18px;
+}
+.progress-bar{
+    height: inherit;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+.bar-width{
+    color: #ffffff;
+    font-weight: 500;
+    align-self: center;
+    margin: auto;
+    font-size: 18px
+}
+/*  Responsiveness */
+@media (max-width:991px){
+.col-md-6{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.skill-container{
+    max-width: 100%;
+}
+}
+@media (max-width:760px){
+    .skill-container{
+        width: 100%;
+        max-width: 100%;
+    }
+    .content{
+        display: block;
+    }
+}
+@media (max-width:385px){
+    .skill-img{
+    display: none;
+    }
+    .skill-description{
+    max-width: 100%;
+    padding: 0;
+    }
+}

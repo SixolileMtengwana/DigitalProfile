@@ -9,39 +9,70 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /* Sixolile Mtengwana Fonts */
 @import url('https://file.myfontastic.com/wNNnzFXKvofs3MmrVdbfgA/icons.css');
-
+/* Custom Font From local Directory */
+@font-face{
+    src: url("./assets/fonts/TitilliumWeb.ttf");
+    font-family: 'Titillium Web';
+}
 /* Applies Font to all Tags/Elements */
 *{ /* Default Global Settings _look&feel_ */
     font-size: 12px; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Titillium Web', 'Open Sans', sans-serif;
     font-weight: 500;
     /* Theme */
     color: #0d1615;
+}
+/*  Motion */
+*{
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
 }
 .digital, body, div{
     margin: none;
 }
 .digital-body{
     background-color: #fbfbfb;
+    /* #fbfbfb; */
     padding: 3px;
     /* padding-bottom: 20px; */
-    max-height: 90vh;
-    height: 90vh;
+    /* max-height: 91vh; */
+    /* height: 90.8vh; */
     overflow: hidden;
     overflow-y: auto; 
+    /* border-radius: 5px; */
+}
+
+.digital-body::-webkit-scrollbar {
+    width: 5px;
+    display: block;
+    background: transparent;
+}
+.digital-body::-webkit-scrollbar-thumb {
+    display: block;
+    background: #5281B8;
+    max-height: 20px;
 }
 /* Custom Classes */
 .icon{
     font-size: 25px !important;
 }
-.digital-animation-smooth{
+/* .digital-animation-smooth{ */
         /* Animated Change Delay */
-        -webkit-transition-delay: 3s; /* Safari */
-        transition-delay: 3s;
-}
+        /* -webkit-transition-delay: 3s; Safari */
+        /* transition-delay: 3s; */
+/* } */
 /* Scrollbar Customization */
 .font-size-11px{
     font-size: 11px !important ;
+}
+.no-padding{
+    padding: 0 !important;
+}
+.d-flex{
+    display: flex !important;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -51,4 +82,12 @@
 ::-webkit-scrollbar-thumb {
     display: none;
     background: #1e1e1e26;
+}
+.line-right{
+    border-right: .5px solid #ffffff;
+}
+@media (max-width:575px){
+    .primary{
+        color: #5281B8 !important;
+    }
 }

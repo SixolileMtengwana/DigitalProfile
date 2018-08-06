@@ -1,0 +1,11 @@
+img{
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+    margin: auto !important;
+}
+.inhertance{
+    width: inherit;
+    height: inherit;
+    display: flex;
+}

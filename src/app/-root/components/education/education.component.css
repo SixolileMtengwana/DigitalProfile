@@ -1,0 +1,25 @@
+img{
+    width: 35%;
+    margin-right: 15px;
+    float: left;
+    object-fit: contain;
+}
+p{
+    font-size: 20px;
+}
+.row{
+    padding-top: 35px;
+}
+.col-md-4{
+    padding: 15px;
+}
+@media (max-width:991px){
+    .col-md-6{
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .skill-container{
+        max-width: 100%;
+    }
+    }

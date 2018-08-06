@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'digital-navbar',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./digital-navbar.component.css']
 })
 export class DigitalNavbarComponent implements OnInit {
+  // Class Handler
+  isNavbarActive: boolean;
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  @HostListener('window:scroll', ['$event'])
+  adjust(evt) {
+    this.isNavbarActive = evt.path[1].scrollY > 10;
+  }
+  get imgSrc():string{
+    return (!this.isNavbarActive)? './assets/img/userlogo.png':'./assets/img/userlogoBlue.png';
+  }
 }
