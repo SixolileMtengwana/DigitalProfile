@@ -3,13 +3,15 @@
     <img [src]="imgSrc" alt="" class="user-logo" routerLink="">
     <div class="username">
       <span class="name" routerLink="">Sixolile Mtengwana</span>
-      <i class="fa fa-navicon"></i>
+      <i class='fa '[ngClass]="(showSideBar)?'fa-times light-text':'fa-navicon'" (click)="sideMenu()"></i>
     </div>
-    <a routerLink="bio">Bio</a>
-    <a routerLink="blog">Blog</a>
-    <a routerLink="projects">Projects</a>
+    <div class="link-container" [class.show]="showSideBar">
+    <a routerLink="bio" (click)="showSideBar = false ">Bio</a>
+    <a routerLink="blog" (click)="showSideBar = false ">Blog</a>
+    <a routerLink="projects" (click)="showSideBar = false ">Projects</a>
     <a target="1" href="https://www.linkedin.com/in/sixolile-mtengwana">LinkedIn</a>
-    <a target="1" href="https://geniusplatform.000webhostapp.com/">Genius Platform</a>
+    <a target="1" href="https://geniusplatform.000webhostapp.com/">Genius Platform</a>      
+    </div>
     <!-- <div class="socials">
   <a href="#facebook"class="fa fa-facebook-square"></a>
   <a href="#twitter"class="fa fa-twitter"></a>

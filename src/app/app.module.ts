@@ -12,7 +12,9 @@ import { EducationComponent } from './-root/components/education/education.compo
 import { ContactComponent } from './-root/components/contact/contact.component';
 import { BioComponent } from './-root/-pages/bio/bio.component';
 import { ProjectsComponent } from './-root/-pages/projects/projects.component';
-
+/* This is a singleton that will be responsible
+ for making sure that the necessary details are present during compilation*/
+import { DigitalService } from './-services/digital.service'; 
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { ProjectsComponent } from './-root/-pages/projects/projects.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ DigitalService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -44,7 +44,7 @@
     padding: inherit;
     cursor: pointer;
 }
-a{
+.link-container > a{
     align-self: center !important;
     font-size: 18px;
     text-transform: capitalize;;
@@ -65,6 +65,10 @@ a{
     color: inherit;
     /* flex-direction: column-reverse; */
 }
+.link-container{
+    color: inherit;
+    display: inherit;
+}
 .socials > a{
     font-size: 20px;
     color: inherit;
@@ -72,7 +76,7 @@ a{
 }
 .activeNavbar{
     background-color: #ffffff;
-    color: #5281B8;
+    color: rgb(119, 162, 211);
     box-shadow:0 .5px 0 0 #c9c8c8;
     opacity: .96;
 }
@@ -88,7 +92,7 @@ i{
 /* navbar body */
 .header{
     /* height: 50vh; */
-    height: fit-content;
+    height: 100%/*fit-content*/;
     width: 100%;
     background-color: #5281B8;
 }
@@ -106,7 +110,9 @@ img{
 .contain{
     width: 100%;
     height: 70%;
+    min-height: fit-content;
     margin: auto !important;
+    padding: 25px 0;
 }
 .contain > *{
     color: #ffffff;
@@ -122,36 +128,53 @@ img{
 .font-size-large{
     font-size: 35px !important;
 }
+.light-text{
+    font-weight: 100 !important;
+}
+.show{
+    display: inherit !important;
+}
 /*  Responsiveness */
 
 @media (max-width:864px){
-    .digital-navbar>a{
-    display: none;
+    .digital-navbar> .link-container > a{
+    display: inherit;
     }
     .username{
     width: calc(100% - 45px);
-    }
-    .col-sm-6{
-        height: fit-content;
-        padding-bottom: 25px;
-        padding-top: 25px;
     }
     .col-sm-6 >img{
         width: 100%;
     }
     .username>i{
     display: block;
-    /* position: static; */
     }
+    /* links to be rendered on click and position is going to change */
+    .link-container{
+        position: fixed;
+        left: 0;
+        top:0;
+        margin-top: 55px;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, #5281B8, #5282b8f1 ) ;
+        display: none !important;
+    }
+    .activeNavbar > .link-container{
+         background: linear-gradient(to right, #ffffff, #fffffff1 ) ;
+    }
+    .link-container > a{
+        font-size: 23.5px;
+    }
+    .show{
+        display: block !important;
+    }
+
 }
 
 @media (max-width:575px) {
     .displayImg{
-    display: none
-    }
-    .d-flex{
-    height: 100%;
-    padding: 25px 15px;
+         display: none
     }
     .username >.name{
         display: none;
