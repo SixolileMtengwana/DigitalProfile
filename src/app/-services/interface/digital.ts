@@ -1,3 +1,4 @@
+import { PersonalDetails } from "./classes/personaldetails";
 
 export class Digital{
 /* 
@@ -7,11 +8,17 @@ export class Digital{
  * GeniusPlatform: https://genius.platform.com
 */
     /* This class will comprise of all the details a user wiil have */
-private contact:string;
-private username:string;
-private firstname:string;
-private lastname:string;
+    imgUrl:string;
+    details:PersonalDetails;
 
+    constructor( imgUrl:string , detail:PersonalDetails){
+        this.imgUrl = imgUrl;
+        this.details = detail;
+    }
+
+    toString():string{
+        return `Avatar: ${this.imgUrl}\n${this.details.toString()}`;
+    }
 
 
 }

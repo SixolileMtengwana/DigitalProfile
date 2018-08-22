@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DigitalService } from './-services/digital.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor(private digitalService:DigitalService){
+    console.log(this.digitalService.sixolileMtengwana.toString())
+  }
 }

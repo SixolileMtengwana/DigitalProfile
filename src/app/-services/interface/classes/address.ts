@@ -23,9 +23,6 @@ export class Address {
     }
 
     public toString():string{
-        return `Adrress Details:\n${this.line1},\n
-        ${(this.line2 != undefined && this.line2.length > 0 )?(this.line2+','):''}\n
-        ${this.city},\n
-        ${this.line1},\n`;
+        return `Adrress Details:\n${this.line1},\n${((this.line2 != undefined && this.line2.length > 0 )?(this.line2+',\n'):'')}${this.city},\n${this.region},\n${this.country},\n${this.zip}`;
     }
 }
